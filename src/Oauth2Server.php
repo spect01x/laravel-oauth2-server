@@ -77,7 +77,7 @@ class Oauth2Server
             $this->options['public_key'],
             $bearerTokenResponse
         );
-	$this-authorizationServer->setEncryptionKey(env('APP_KEY'));
+	$this->authorizationServer->setEncryptionKey(env('APP_KEY'));
 	
         $this->enableAuthorizationGrants($grantNames);
 
